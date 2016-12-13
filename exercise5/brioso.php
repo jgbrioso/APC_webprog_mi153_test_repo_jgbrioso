@@ -159,7 +159,8 @@ function test_input($data) {
   <span class="error">* <?php echo $genderErr;?></span>
   <br><br>
   <input type="submit" name="submit" value="Submit">  
-</form>
+</form>	
 </center>
 </table>
+<a href="index.php" class=button>Data List</a>
 </html>
