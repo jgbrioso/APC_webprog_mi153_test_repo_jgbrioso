@@ -12,6 +12,7 @@ if(isset($_POST['btn-update']))
  $name = $_POST['name'];
  $email = $_POST['email'];
  $comment = $_POST['comment'];
+ $gender = $_POST['gender'];
  // variables for input data
 
  // sql query for update data into database
@@ -67,10 +68,13 @@ if(isset($_POST['btn-cancel']))
     <td><input type="text" name="name" placeholder="Name" value="<?php echo $fetched_row['name']; ?>" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="email" placeholder="Last Name" value="<?php echo $fetched_row['email']; ?>" required /></td>
+    <td><input type="text" name="email" placeholder="Email" value="<?php echo $fetched_row['email']; ?>" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="comment" placeholder="City" value="<?php echo $fetched_row['comment']; ?>" required /></td>
+    <td><input type="text" name="comment" placeholder="Comment" value="<?php echo $fetched_row['comment']; ?>" required /></td>
+    </tr>
+	<tr>
+	<td><input type="text" name="gender" placeholder="gender" value="<?php echo $fetched_row['gender']; ?>" required /></td>
     </tr>
     <tr>
     <td>
