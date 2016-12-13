@@ -42,7 +42,9 @@ function delete_id(id)
     <label>CRUD Operations With PHP and MySql - <a href="http://cleartuts.blogspot.com" target="_blank">By Cleartuts</a></label>
     </div>
 </div>
-
+<div class="link">
+				<a href="brioso.php">MAIN PAGE</a>
+			</div>
 <div id="body">
  <div id="content">
     <table align="center">
@@ -51,7 +53,7 @@ function delete_id(id)
     </tr>
     <th>Name</th>
     <th>Email</th>
-    <th>Email</th>
+    <th>Gender</th>
     <th>Comment</th>
     <th colspan="2">Operations</th>
     </tr>
@@ -65,6 +67,7 @@ function delete_id(id)
         <td><?php echo $row[1]; ?></td>
         <td><?php echo $row[2]; ?></td>
         <td><?php echo $row[3]; ?></td>
+		<td><?php echo $row[4]; ?></td>
   <td align="center"><a href="javascript:edt_id('<?php echo $row[0]; ?>')"><img src="b_edit.png" align="EDIT" /></a></td>
         <td align="center"><a href="javascript:delete_id('<?php echo $row[0]; ?>')"><img src="b_drop.png" align="DELETE" /></a></td>
         </tr>
