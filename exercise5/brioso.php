@@ -13,7 +13,7 @@ if(isset($_POST['submit']))
 
     // sql query for inserting data into database
 
-    $sql_query = "INSERT INTO users(name,email,message,gender) VALUES('$name','$email','$comment','$gender')";
+    $sql_query = "INSERT INTO users(Name,Email,Comment,Gender) VALUES('$name','$email','$comment','$gender')";
     mysqli_query($con, $sql_query);
 
     // sql query for inserting data into database
@@ -141,8 +141,7 @@ function test_input($data) {
   return $data;
 }
 ?>
-<h2>Fill up your online life now!</h2>
-<p><span class="error">* required field.</span></p>
+<h2>Sign now!</h2>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   Name: <input type="text" name="name" value="<?php echo $name;?>">
   <span class="error">* <?php echo $nameErr;?></span>
